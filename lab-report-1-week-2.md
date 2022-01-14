@@ -5,7 +5,9 @@
 
 **Step 1:** Installing VS Code
 
-The first step you need to take to log into a course-specific account on `ieng6` consists of downloading Visual Studio Code. This can be done through clicking on the following link to the Visual Studio Code website:  [https://code.visualstudio.com/](https://code.visualstudio.com/). Make sure to download the version that suits the operating system that you are using! 
+Hello and welcome to a tutorial on how to log into a course-specific account on `ieng6`!
+
+The first step you need to take consists of downloading Visual Studio Code, a code editor. This can be done through clicking on the following link to the Visual Studio Code website:  [https://code.visualstudio.com/](https://code.visualstudio.com/). Make sure to download the version that suits the operating system that you are using! 
 
 Once you have VS Code installed, this window should be displayed on your screen. The colors might look a little different, however, your window should look relatively similar to this: 
 
