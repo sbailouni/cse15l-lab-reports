@@ -86,13 +86,39 @@ This is what logging back into the `ieng6` server and running `ls` looks like:
 
 Now that you've learned how to move files over using the `scp` command, you will realize that this process takes longer than it should be because of the repetitive prompt to enter your password. 
 
-That is where the importance of setting an `ssh` key comes from, which this step will discuss how to do. This step will be done using `ssh-keygen` which is a program that generates a public key and private key. By copying the public key to a location on the remote computer and storing the private key on a location on the client server, the `ssh` command will no longer prompt you to enter your password again. 
+That is where the importance of setting an `ssh` key comes from. This step will be done using `ssh-keygen` which is a program that generates a public key and private key. Through copying the public key to a location on the remote computer and storing the private key on a location on the client server, the `ssh` command will no longer prompt you to enter your password again. 
 
 First, run the following command on your computer (not `ieng6`):
 
 ```
 $ ssh-keygen
 ```
+
+You will be asked to enter a location where to copy the file. You should simply copy and paste the suggested location that is given to you in parenthesis, like in this image:
+
+![Image](report1-7.png)
+
+Press the enter space twice for the following inputs and then copy the location of the public key given to you in the terminal. 
+
+![Image](report1-8.png)
+
+Afterwards, log back into the remote server using `ssh` and your username. Enter your password and then use the following command:
+
+```
+$ mkdir .ssh
+```
+
+Then, log out of the server by typing `exit`. Now that you're back on the client server, enter this additional command in order to copy the public key to the `.ssh` directory of your user on the `ieng6` server:
+
+```
+scp <path you were given in the above command> <username>:~/.ssh/authorized_keys
+```
+
+As an example, it should look similar to this: 
+
+![Image](report1-9.png)
+
+Now, you are able to use `ssh` or `scp` without having to enter your password! 
 
 &nbsp; 
 
