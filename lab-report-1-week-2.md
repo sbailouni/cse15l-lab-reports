@@ -22,10 +22,10 @@ To start, you will need to look up your course-specific account for CSE 15L thro
 Then, open the terminal on VS code either through the menu bar or by the Ctrl/Command + ` keyboard shortcut and type the following command into the terminal: 
 
 ```
-$ ssh cs15lwi22zz@ieng6.ucsd.edu
+$ ssh cs15lwi22abc@ieng6.ucsd.edu
 ```
 
-Before you click enter, replace the ‘zz’ portion of the command with the three digits you wrote down after looking up your account in the previous step. 
+Before you click enter, replace the 'abc' portion of the command with the three digits you wrote down after looking up your account in the previous step. 
 
 If this is the first time you connect to the server, you might receive a message like this in the terminal as I did for my first time connecting: 
 
@@ -145,7 +145,7 @@ This command allows you to log into the remote server, run a certain command typ
 Another way to optimize remote running is to write multiple lines of codes in one line, separated by semi-colons which would look like this:
 
 ```
-$ cp <FileName>.java <SecondFileName>.java; javac <FileName>.java; java <ClassName>
+$ cp <FileName>.java; javac <FileName>.java; java <ClassName>
 ```
 
 Combining several lines of code together into one line is much more efficient and effective than taking the time to run each portion individually. 
