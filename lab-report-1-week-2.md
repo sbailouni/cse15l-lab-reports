@@ -71,7 +71,7 @@ If you're still logged into the remote computer, your first step will be to log 
 Then, run the file you wish to move to the remote computer on your computer first, to double check there are no errors and that everything works. Afterwards, run the following command in the terminal using your special three digit numbers at the end of your username:
 
 ```
-scp <filename>.java cs15lwi22abc@ieng6.ucsd.edu:~/
+$ scp <filename>.java cs15lwi22abc@ieng6.ucsd.edu:~/
 ```
 
 As an example, your terminal should look like this after doing the previous steps:
