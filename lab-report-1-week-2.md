@@ -60,7 +60,7 @@ This following image shows what running the previous commands on the remote comp
 
 **Step 4:** Moving Files with `scp`
 
-After running some commands, now you can attempt to copy a file from your computer over to the remote computer with the command `scp`. This command will be run from the client, meaning that you won't need to log into `ieng6` and do it directly from your computer. 
+After running some commands, now you can attempt to copy a file from your computer over to the remote computer with the command `scp`. This command will be run from the client, meaning that you won't need to log into `ieng6` and instead will do it directly from your computer. 
 
 If you're still logged into the remote computer, your first step will be to log out either by clicking Ctrl+D or running the command `exit`. Then, run the file you wish to move to the remote computer on your computer first, to double check there are no errors and everything works. Afterwards, run the following command in the terminal using your special two digit numbers at the end of your username (instead of 'zz'):
 
