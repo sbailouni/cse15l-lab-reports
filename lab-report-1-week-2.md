@@ -17,7 +17,7 @@ Once you have VS Code installed, this window should be displayed on your screen.
 
 Depending on the operating system you have, you may need to download a program before attempting this step. For Windows users, you will need to download OpenSSH through this following link: [Download OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). For Mac users, you aren’t required to install this.  
 
-To start, you will need to look up your course-specific account for CSE 15L through this link: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php). Make sure to write down the last two digits of your account name as you will need this to log into a course-specific account on `ieng6`. 
+To start, you will need to look up your course-specific account for CSE 15L through this link: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php). Make sure to write down the last three digits of your account name as you will need this to log into a course-specific account on `ieng6`. 
 
 Then, open up the terminal on VS code either through the menu bar or by the Ctrl/Command + ` keyboard shortcut and begin typing the following command into the terminal. 
 
@@ -25,7 +25,7 @@ Then, open up the terminal on VS code either through the menu bar or by the Ctrl
 $ ssh cs15lwi22zz@ieng6.ucsd.edu
 ```
 
-Before you click enter, replace the ‘zz’ portion of the command with the two digits you wrote down after looking up your account in the previous step. 
+Before you click enter, replace the ‘zz’ portion of the command with the three digits you wrote down after looking up your account in the previous step. 
 
 If this is the first time you connect to the surver, you might receive a message like this in the terminal: 
 
@@ -62,7 +62,7 @@ This following image shows what running the previous commands on the remote comp
 
 After running some commands, now you can attempt to copy a file from your computer over to the remote computer with the command `scp`. This command will be run from the client, meaning that you won't need to log into `ieng6` and instead will do it directly from your computer. 
 
-If you're still logged into the remote computer, your first step will be to log out either by clicking Ctrl+D or running the command `exit`. Then, run the file you wish to move to the remote computer on your computer first, to double check there are no errors and everything works. Afterwards, run the following command in the terminal using your special two digit numbers at the end of your username (instead of 'zz'):
+If you're still logged into the remote computer, your first step will be to log out either by clicking Ctrl+D or running the command `exit`. Then, run the file you wish to move to the remote computer on your computer first, to double check there are no errors and everything works. Afterwards, run the following command in the terminal using your special three digit numbers at the end of your username (instead of 'zz'):
 
 ```
 scp <filename>.java cs15lwi22zz@ieng6.ucsd.edu:~/
@@ -118,9 +118,30 @@ As an example, it should look similar to this:
 
 ![Image](report1-9.png)
 
-Now, you are able to use `ssh` or `scp` without having to enter your password! 
+Now the next time you use `ssh` or `scp`, you aren't required to enter your password! 
 
 &nbsp; 
 
 **Step 6:** Optimizing Remote Running
 
+To optimize remote running even further, there are several ways one can use commands to make edits to a certain file or perform a certain action more efficiently or effectively. 
+
+For example, if you wish to log into the remote server and run a single command all at once in one line, you are able to type the following: 
+
+```
+$ ssh cs15lwi22zz@ieng6.ucsd.edu "ls <directory>"
+```
+
+An example of running this command can be seen in the following image: 
+
+![Image](report1-10.png)
+
+This command allows you to log into the remote server, run a certain command typed within  quotation marks, and then immediately log out afterwards which saves a lot of time and energy. 
+
+Another way to optimize remote running is to write multiple lines of codes in one line, separated by semi-colons which would look like this:
+
+```
+$ cp <FileName>.java <SecondFileName>.java; javac <FileName>.java; java <ClassName>
+```
+
+Combining several lines of code together into one line is much more efficient and effective than taking the time to run each portion individually. 
