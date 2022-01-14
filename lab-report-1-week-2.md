@@ -27,7 +27,7 @@ $ ssh cs15lwi22zz@ieng6.ucsd.edu
 
 Before you click enter, replace the ‘zz’ portion of the command with the three digits you wrote down after looking up your account in the previous step. 
 
-If this is the first time you connect to the surver, you might receive a message like this in the terminal: 
+If this is the first time you connect to the server, you might receive a message like this in the terminal: 
 
 ![Image](report1-2.png)
 
@@ -73,7 +73,7 @@ As an example, your terminal should look like this after doing the previous step
 ![Image](report1-5.png)
 
 
-After running the command, you should be prompted to enter your password. Once you've entered your password, you may log into the `ieng6` server again through using ssh and your username. Use the command `ls` on the remote computer, and you will see that the file from your computer has now transferred over to the remote computer! 
+After running the command, you should be prompted to enter your password. Once you've entered your password, you may log into the `ieng6` server again through using `ssh` and your username. Use the command `ls` on the remote computer, and you will see that the file from your computer has now transferred over to the remote computer! 
 
 This is what logging back into the `ieng6` server and running `ls` looks like: 
 
@@ -84,7 +84,7 @@ This is what logging back into the `ieng6` server and running `ls` looks like:
 
 **Step 5:** Setting an SSH Key
 
-Now that you've learned how to move files over using the `scp` command, you will realize that this process takes longer than it should be because of the repetitive prompt to enter your password. 
+Now that you know how to move files over using the `scp` command, you will realize that this process takes longer than it should be because of the repetitive prompt to enter your password. 
 
 That is where the importance of setting an `ssh` key comes from. This step will be done using `ssh-keygen` which is a program that generates a public key and private key. Through copying the public key to a location on the remote computer and storing the private key on a location on the client server, the `ssh` command will no longer prompt you to enter your password again. 
 
@@ -116,9 +116,9 @@ scp <path you were given in the above command> <username>:~/.ssh/authorized_keys
 
 As an example, it should look similar to this: 
 
-![Image](report1-9.png)
+![Image](report1-9;.png)
 
-Now the next time you use `ssh` or `scp`, you aren't required to enter your password! 
+Now the next time you use `ssh` or `scp`, you are no longer required to enter your password! 
 
 &nbsp; 
 
