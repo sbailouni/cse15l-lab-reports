@@ -39,4 +39,34 @@ After you've typed your password, your terminal should look like this:
 
 This means that you've officially remotely connected to a computer in the CSE basement and that you're ready to perform some fun commands! 
 
-Step 3: 
+&nbsp; 
+
+**Step 3:** Trying some commands
+
+After you've remotely connected, there are some helpful commands that you can run on the remote computer. 
+
+You can try the following:
+* `cd` : changes directory
+* `cd ~` : navigates to home directory
+* `ls -lat` : lists files in directory along with hidden files
+* `mkdir <name>` : makes a new directory/folder
+* `pwd` : prints working directory
+
+Here is a following image of what running the previous commands on the remoate computer might look like in the terminal:
+
+![Image](report1-4.png)
+
+&nbsp; 
+
+**Step 4:** Moving Files with `scp`
+
+&nbsp; 
+
+After running some commands, 
+
+**Step 5:** Setting an SSH Key
+
+&nbsp; 
+
+**Step 6:** Optimizing Remote Running
+
