@@ -3,11 +3,11 @@
 
 &nbsp; 
 
-**Step 1:** Installing VS Code
+### **Step 1:** Installing VS Code
 
 Hello and welcome to a tutorial on how to log into a course-specific account on `ieng6`!
 
-The first step you need to take consists of downloading Visual Studio Code, a code editor. This can be done through clicking on the following link to the Visual Studio Code website:  [https://code.visualstudio.com/](https://code.visualstudio.com/). Make sure to download the version that suits the operating system that you are using! 
+The first step you need to take consists of downloading Visual Studio Code, a code editor. This can be done through clicking on the following link to the Visual Studio Code website:  [Visual Studio Code](https://code.visualstudio.com/). Make sure to download the version that suits the operating system that you are using! 
 
 Once you have VS Code installed, this window should be displayed on your screen. The colors might look a little different, however, your window should look relatively similar to this: 
 
@@ -15,11 +15,11 @@ Once you have VS Code installed, this window should be displayed on your screen.
 
 &nbsp; 
 
-**Step 2:** Remotely Connecting
+### **Step 2:** Remotely Connecting
 
 For this step, Windows users need to download OpenSSH through this following link: [Download OpenSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse). For Mac users, you aren’t required to install this.  
 
-To start, you will need to look up your course-specific account for CSE 15L through this link: [https://sdacs.ucsd.edu/~icc/index.php](https://sdacs.ucsd.edu/~icc/index.php). Make sure to write down the last three digits of your account name as you will need this to log into a course-specific account on `ieng6`! 
+To start, you will need to look up your course-specific account for CSE 15L through this link: [UCSD Account Lookup](https://sdacs.ucsd.edu/~icc/index.php). Make sure to write down the last three digits of your account name as you will need this to log into a course-specific account on `ieng6`! 
 
 Then, open the terminal on VS code either through the menu bar or by the Ctrl/Command + ` keyboard shortcut and type the following command into the terminal: 
 
@@ -43,7 +43,7 @@ This means that you've officially remotely connected to a computer in the CSE ba
 
 &nbsp; 
 
-**Step 3:** Trying some commands
+### **Step 3:** Trying some commands
 
 After you've remotely connected, there are some helpful commands that you can run on the remote computer. 
 
@@ -62,7 +62,7 @@ You can also try these commands on your own computer if you'd like.
 
 &nbsp; 
 
-**Step 4:** Moving Files with `scp`
+### **Step 4:** Moving Files with `scp`
 
 After running some commands, now you can attempt to copy a file from your computer over to the remote computer with the command `scp`. This command will be run from the client, meaning that you won't need to log into `ieng6` and instead will do it directly from your computer. 
 
@@ -88,7 +88,7 @@ This is what logging back into the `ieng6` server and running `ls` looks like:
 
 &nbsp; 
 
-**Step 5:** Setting an SSH Key
+### **Step 5:** Setting an SSH Key
 
 Now that you know how to move files over using the `scp` command, you will realize that this process takes longer than it should because of the repetitive prompt to enter your password. 
 
@@ -128,7 +128,7 @@ Now the next time you use `ssh` or `scp`, you don't need to enter your password!
 
 &nbsp; 
 
-**Step 6:** Optimizing Remote Running
+### **Step 6:** Optimizing Remote Running
 
 To optimize remote running further, there are several ways one can use commands to make edits to a certain file or perform a certain action more efficiently or effectively. 
 
@@ -150,6 +150,16 @@ Another way to optimize remote running is to write multiple lines of codes in on
 $ cp <FileName>.java; javac <FileName>.java; java <ClassName>
 ```
 
-Combining several lines of code together into one line is much more efficient and effective than taking the time to run each portion individually. 
+In this example, we were able to copy the file, compile, and run it all at the same time using one keystroke in comparison to three total keystrokes, which would've looked like this: 
+
+```
+$ cp <FileName>.java
+$ javac <FileName>.java
+$ java <ClassName>
+```
+
+By running these commands together in one line of code separated by semi-colons, we have saved two total keystrokes.
+
+Combining several lines of code together into one line is much more efficient and effective than taking the time to run each portion individ. You can also use the up arrow on the keyboard to access the last commands you ran which saves a lot of keystores and retyping/pasting.
 
 And that concludes the tutorial on how to log into a course-specific account on `ieng6`, run some commands, move files with `scp` and set an SSH key! 
