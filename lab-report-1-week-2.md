@@ -160,6 +160,6 @@ $ java <ClassName>
 
 By running these commands together in one line of code separated by semi-colons, we have saved two total keystrokes.
 
-Combining several lines of code together into one line is much more efficient and effective than taking the time to run each portion individ. You can also use the up arrow on the keyboard to access the last commands you ran which saves a lot of keystores and retyping/pasting.
+Combining several lines of code together into one line is much more efficient and effective than taking the time to run each portion individually. You can also use the up arrow on the keyboard to access the last commands you ran which saves a lot of keystores and retyping/pasting.
 
 And that concludes the tutorial on how to log into a course-specific account on `ieng6`, run some commands, move files with `scp` and set an SSH key! 
