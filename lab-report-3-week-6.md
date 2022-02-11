@@ -5,7 +5,7 @@
 
 ### **Step 1:** Creating `~/.ssh/config`
 
-In order to tell SSH username to use when logging into specific servers, we need to put an entry to `~/.ssh/config`. The first step consists of opening `~/.ssh/config` on your computer. If you don't already have it, then you need to create it by typing the following commands:
+In order to tell SSH what username to use when logging into specific servers, we need to put an entry to `~/.ssh/config`. The first step consists of opening `~/.ssh/config` on your computer. If you don't already have it, then you need to create it by typing the following commands:
 
 ```
 $ touch ~/.ssh/config
@@ -20,6 +20,10 @@ Afterwards, you may see that when you try to access `~/.ssh/config`, it gives an
 ```
 $ chmod +x ~/.ssh/config
 ```
+
+This is what this process might look like in the terminal:
+
+![image](report3-5.png)
 
 &nbsp; 
 
