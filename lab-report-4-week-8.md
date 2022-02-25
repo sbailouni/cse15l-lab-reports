@@ -78,3 +78,4 @@ This is the image of the JUnit output for Snippet 3 in the terminal when tested 
 
 ![image](report4-4.png)
 
+Thank you for reviewing the lab report! :-)
