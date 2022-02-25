@@ -50,7 +50,7 @@ This is the corresponding output of the test when ran in the terminal for my imp
 
 ![image](report4-9.png)
 
-This test failed for snippet 3 because it was taking in account the cases of links with newlines. Fixing it can be done in under 10 lines of code by adding splitting the string into an array and then use newlines along with white spaces as separators, preserving only the first element in the array as the contents of the link. Doing this would ultimately take away the text and contents following the whitespace that would be detected and return the link that is needed. 
+This test failed for snippet 3 because it was taking in account the cases of links with newlines. Fixing it can be done in under 10 lines of code by adding splitting the string into an array and then use newlines along with white spaces as separators, preserving only the first element in the array as the contents of the link. Doing this would ultimately take away the text and contents following the whitespace that would be detected and return the valid link.
 
 ## Other Group's Implementation
 
