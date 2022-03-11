@@ -8,7 +8,7 @@
 ![foo ![bar](/url)](/url2)
 ```
 
-For this test, the correct output should be an empty ArrayList with no links because the exclamation mark behind the first open bracket makes it an invalid link. 
+For this test, the correct output should be an empty ArrayList with no links because the exclamation mark behind the open bracket makes it an invalid link. 
 
 To find the differences between the two implementations of markdown parse, I used `diff` on the results.txt files of both our implementation and the one provided for lab 9 using the following command in the terminal on the remote server:
 
@@ -24,7 +24,11 @@ This was done by combining the results into a results.txt file for both implemen
 bash script.sh > results.txt
 ```
 
-After running `diff` in the terminal, this was the output for my lab group's implementation:
+This is what part of the output looked like when running `diff` in the terminal:
+
+![image](report5-4.png)
+
+Specifically for test file `573.md`, this was the output for my lab group's implementation:
 
 ```
 < test-files/573.md[]
@@ -35,6 +39,10 @@ On the other hand, this was the output for the implementation from lab 9:
 ```
 > test-files/573.md[/url]
 ```
+
+This is a screenshot of the specific output differences in terminal:
+
+![image](report5-5.png)
 
 The correct implementation for this file is our lab group's implementation because it resulted in the expected output, which was an empty ArrayList, compared to the implementation provided from lab 9 which resulted in an ArrayList including the string `/url`. 
 
@@ -58,6 +66,10 @@ if(markdown.charAt(nextOpenBracket-1) == '!') {
 ```
 [link](foo(and(bar))
 ```
+
+Test outputs:
+
+![image](report5-6.png)
 
 This was the output for my lab group's implementation:
 
